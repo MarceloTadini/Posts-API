@@ -25,7 +25,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/node-docker:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/posts-api:latest
           build-args: |
             MONGO_URI=${{ secrets.MONGO_URI }}
             API_SECRET=${{ secrets.API_SECRET }}
